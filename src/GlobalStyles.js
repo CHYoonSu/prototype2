@@ -57,6 +57,12 @@ body{
 a{
   text-decoration: none;
 }
+@font-face { font-family: 'NanumGothic';
+src: url('/fonts/NanumGothic.eot');
+src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),
+url('/fonts/NanumGothic.woff') format('woff');}
+
+
 `;
 
 export default GlobalStyles;

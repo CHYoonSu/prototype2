@@ -3,12 +3,12 @@ import styled from "styled-components";
 const HeaderLine = styled.header`
   position: fixed;
   background-color: white;
+  text-align: center;
   width: 100%;
-  height: 100px;
-  border-bottom: 1px solid black;
+  height: 60px;
 `;
 function HeaderBox() {
-  return <HeaderLine></HeaderLine>;
+  return <HeaderLine>Header</HeaderLine>;
 }
 
 export default HeaderBox;
