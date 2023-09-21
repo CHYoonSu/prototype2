@@ -6,8 +6,7 @@ import GlobalStyles from "./GlobalStyles";
 import FooterBox from "./FooterBox";
 //마스터페이지
 const Wrap = styled.div`
-  font-family: "NanumGothic", "serif";
-  background-color: #f8f8f8;
+  background-color: white; //#f8f8f8
 `;
 
 function App() {

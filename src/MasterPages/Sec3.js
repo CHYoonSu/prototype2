@@ -11,6 +11,7 @@ const Section1 = styled.section`
   align-items: center;
   justify-content: center;
   line-height: 1.2em;
+  height: 90%;
 `;
 
 const TitleBox = styled.div`
@@ -40,7 +41,7 @@ function Sec3() {
   return (
     <Section1>
       <TitleBox>
-        <Title>일정 관리 시스템</Title>
+        <Title>수정해야함.</Title>
       </TitleBox>
       <BigBox>
         <BigText>샬라샬라샬라</BigText>

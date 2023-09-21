@@ -1,7 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-	
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,15 +56,12 @@ table {
   box-sizing: border-box;
 }
 body{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Noto Sans KR',"sans-serif"; 
 }
 a{
   text-decoration: none;
 }
-@font-face { font-family: 'NanumGothic';
-src: url('/fonts/NanumGothic.eot');
-src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),
-url('/fonts/NanumGothic.woff') format('woff');}
+
 
 
 `;

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const Section1 = styled.section`
   display: grid;
@@ -8,8 +8,18 @@ const Section1 = styled.section`
   align-items: center;
   line-height: 1.2em;
 `;
+
+const opacity = keyframes`
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+`;
+
 const HeadBox = styled.div`
-  width: 800px;
+  width: 900px;
 `;
 const TextBox = styled.div``;
 const BtnBox = styled.div`
@@ -20,18 +30,20 @@ const BtnBox = styled.div`
 const HeadText = styled.h1`
   text-align: center;
   line-height: 1.2em;
-  font-size: 96px;
+  font-size: 92px;
   margin-top: 100px;
+  animation: ${opacity} 2s ease-out;
 `;
 const ContentText = styled.p`
   text-align: center;
-  line-height: 1.2em;
+  line-height: 1.6em;
   font-size: 20px;
   margin-top: 30px;
+  animation: ${opacity} 1s;
 `;
 const GoBtn = styled.button`
   display: block;
-  background-color: #efceff;
+  background-color: #f2ecff;
   width: 220px;
   height: 60px;
   text-align: center;
@@ -49,6 +61,8 @@ function Sec1() {
         <HeadText>나에게 맞는 취미와 시간관리</HeadText>
         <ContentText>
           자신에게 맞는 취미를 발견하고, 더 의미 있는 시간을 보내세요!
+          <br />
+          기존 취미를 가지고 있어도 다양한 경험을 제공해드립니다!
         </ContentText>
       </HeadBox>
 
