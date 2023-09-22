@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Section1 = styled.section`
-  border-top: 1px solid black;
   display: grid;
   grid-template-rows: 150px repeat(3, 100px 70px 10px);
   text-align: center; //center로 하지말고 Q 문장 옆에 슥 가지런하게 하면 좋겠는데

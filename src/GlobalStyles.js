@@ -26,6 +26,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  color: #2f302fff; //회색깔 글씨색
 }
 article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section {

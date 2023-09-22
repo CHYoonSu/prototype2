@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Section1 = styled.section`
-  border-top: 1px solid black;
   background-color: beige;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

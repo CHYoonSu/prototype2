@@ -1,79 +1,119 @@
 import React from "react";
 import styled from "styled-components";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Section1 = styled.section`
-  border-top: 1px solid black;
+  background-color: #f8f8f8ff;
 `;
 const Wrap = styled.div`
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 3fr;
-  height: 100vh;
-  width: 90%;
-  margin: auto;
-  column-gap: 10px;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
 `;
-const TitleBox = styled.div`
-  grid-column: 1/-1;
+const IDK = styled.span`
+  display: block;
+  width: 100%;
+  margin-top: 30px;
 `;
-const Title = styled.h1`
+const Title = styled.h2`
   font-size: 52px;
+  font-weight: 700;
+  margin-top: 50px;
 `;
-const Process1 = styled.div`
-  width: auto;
-  height: 300px;
-  background-color: red;
+const SubTitle = styled.p`
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 50px;
 `;
-const Process2 = styled.div`
-  width: auto;
-  height: 300px;
-  background-color: orange;
+const Blank = styled.div`
+  height: 50px;
 `;
-const Process3 = styled.div`
-  width: auto;
-  height: 300px;
-  background-color: yellow;
+const ProcessLayOut = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 `;
-const Process4 = styled.div`
-  width: auto;
-  height: 300px;
-  background-color: green;
+const Arrow = styled.div`
+  .Ar {
+    color: #845ec2;
+  }
 `;
-const Process5 = styled.div`
-  width: auto;
-  height: 300px;
-  background-color: darkblue;
+const ProcessBox = styled.div`
+  border: 1px solid black;
+  border: 2px;
+  box-shadow: 0 5px 20px 0 #f0f2f2;
+  background-color: white;
 `;
-const Process6 = styled.div`
-  width: auto;
-  height: 300px;
-  background-color: purple;
+const Box = styled.div`
+  margin-top: 15px;
 `;
-
+const Number = styled.div`
+  border: 1px solid #845ec2;
+  border-radius: 30px;
+  width: 20%;
+  margin: auto;
+  color: #845ec2;
+`;
+const Content = styled.p`
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+`;
+const Img = styled.img`
+  width: 100%;
+  height: 250px;
+  margin-top: 30px;
+`;
 function Sec4() {
   return (
     <Section1>
       <Wrap>
-        <TitleBox>
-          <Title>절차</Title>
-        </TitleBox>
-        <Process1>신청하기</Process1>
-        <Process2>고객정보수집</Process2>
-        <Process3>결제</Process3>
-        <Process4>정보분석</Process4>
-        <Process5>
-          맞춤취미목록
-          <br />
-          제공
-        </Process5>
-        <Process6>
-          일정관리
-          <br />및<br />
-          취미가이드라인
-        </Process6>
+        <IDK>절차</IDK>
+        <Title>상담신청을 통한 서비스 제공</Title>
+        <SubTitle>체계적인 과정을 통한 맞춤취미추천</SubTitle>
+        <Blank></Blank>
+        <ProcessLayOut>
+          <ProcessBox>
+            <Box>
+              <Number>1단계</Number>
+              <Content>신청하기</Content>
+            </Box>
+            <Img></Img>
+          </ProcessBox>
+          <Arrow>
+            <IoIosArrowForward className="Ar"></IoIosArrowForward>
+          </Arrow>
+          <ProcessBox>
+            <Box>
+              <Number>2단계</Number>
+              <Content>맞춤 취미 제공</Content>
+            </Box>
+            <Img></Img>
+          </ProcessBox>
+          <Arrow>
+            <IoIosArrowForward className="Ar"></IoIosArrowForward>
+          </Arrow>
+          <ProcessBox>
+            <Box>
+              <Number>3단계</Number>
+              <Content>일정관리 가이드</Content>
+            </Box>
+            <Img></Img>
+          </ProcessBox>
+          <Arrow>
+            <IoIosArrowForward className="Ar"></IoIosArrowForward>
+          </Arrow>
+          <ProcessBox>
+            <Box>
+              <Number>4단계</Number>
+              <Content>지속적인 관리</Content>
+            </Box>
+            <Img></Img>
+          </ProcessBox>
+        </ProcessLayOut>
       </Wrap>
     </Section1>
   );

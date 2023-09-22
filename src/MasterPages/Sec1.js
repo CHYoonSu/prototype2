@@ -2,11 +2,8 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const Section1 = styled.section`
-  display: grid;
-  grid-template-rows: 8fr 1fr 3fr;
   justify-content: center;
   align-items: center;
-  line-height: 1.2em;
 `;
 
 const opacity = keyframes`
@@ -18,57 +15,74 @@ const opacity = keyframes`
   }
 `;
 
-const HeadBox = styled.div`
-  width: 900px;
-`;
-const TextBox = styled.div``;
+const HeadBox = styled.div``;
 const BtnBox = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 45px;
+
+  gap: 40px;
 `;
 
-const HeadText = styled.h1`
+const HeadTitle = styled.h1`
   text-align: center;
   line-height: 1.2em;
-  font-size: 92px;
-  margin-top: 100px;
+  font-size: 52px;
+  font-weight: 700;
   animation: ${opacity} 2s ease-out;
+  margin-top: 150px;
 `;
-const ContentText = styled.p`
+const SubTitle = styled.p`
   text-align: center;
   line-height: 1.6em;
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 30px;
   animation: ${opacity} 1s;
 `;
 const GoBtn = styled.button`
   display: block;
-  background-color: #f2ecff;
-  width: 220px;
+  background-color: white;
+
+  margin-top: 30px;
+  flex-basis: 220px;
   height: 60px;
   text-align: center;
   line-height: 1.2em;
   font-size: 20px;
   font-weight: bold;
-  border: 1px solid black;
-  border-radius: 30px;
-  margin-bottom: 130px;
+  border: 1px solid #66449c;
+  margin-top: 30px;
+`;
+
+const Consult = styled.button`
+  display: block;
+  margin-top: 30px;
+  flex-basis: 220px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #66449c;
+`;
+const Color = styled.span`
+  color: #845ec2;
 `;
 function Sec1() {
   return (
     <Section1>
       <HeadBox>
-        <HeadText>나에게 맞는 취미와 시간관리</HeadText>
-        <ContentText>
-          자신에게 맞는 취미를 발견하고, 더 의미 있는 시간을 보내세요!
+        <HeadTitle>
+          나만을 위한 <Color>맞춤 취미</Color>서비스
+        </HeadTitle>
+        <SubTitle>
+          당신만의 특별한 시간을 위한 맞춤 취미 서비스
           <br />
-          기존 취미를 가지고 있어도 다양한 경험을 제공해드립니다!
-        </ContentText>
+          효율적인 일정 관리까지, 우리와 함께 하세요.
+        </SubTitle>
       </HeadBox>
 
-      <TextBox></TextBox>
       <BtnBox>
         <GoBtn>알아보기</GoBtn>
+        <Consult>상담하기</Consult>
       </BtnBox>
     </Section1>
   );
